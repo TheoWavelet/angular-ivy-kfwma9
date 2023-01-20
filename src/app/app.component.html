@@ -1,25 +1,41 @@
-<h2>Tasks</h2>
-<ol class="grid gap-4">
-  <li>Inject <strong> AppService</strong> in <strong> AppComponent</strong></li>
-  <li>
-    Get <strong> GridData </strong> from the service and display it with this
-    <a
-      target="_blank"
-      href="https://www.figma.com/file/ZNchn8BTcKarJyBNyMw9Cz/Starter-Template-Designs?node-id=920%3A653&t=KK8RyMLgj0MFn43N-0"
-      ><strong> Design</strong></a
+<div class="content gap-4 flex justify-center items-center h-full flex-col">
+  <div
+    class="
+      grid
+      w-[600px]
+      max-w-full
+      gap-2
+      rounded-lg
+      border border-gray-200 border-solid
+      p-3
+    "
+  >
+    <input
+      class="h-14 w-full rounded-lg border border-gray-200 border-solid px-4"
+      type="text"
+      name="search-input"
+      #ngModel
+      [(ngModel)]="search"
+    />
+    <div
+      class="
+        item
+        w-full
+        rounded-lg
+        border border-gray-200 border-solid
+        h-14
+        gap-4
+        flex
+        justify-around
+        px-3
+        bg-gray-50
+        items-center
+        text-lg
+        font-mono
+      "
     >
-  </li>
-  <li>
-    Translte 'Statuses' of the data by using a <strong>Pipe</strong>  
-  </li>
-  <li>
-    Search functionality : filter data based on user input ( see input design )
-  </li>
-  <li>
-    make service observable to return <strong>error</strong> ( see error design )
-  </li>
-</ol>
-<br>
-<br>
-<br>
-<!-- task content -->
+      <p>მაგალითი</p>
+      <p>სტატუსი</p>
+    </div>
+  </div>
+</div>

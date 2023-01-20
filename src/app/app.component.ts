@@ -7,6 +7,8 @@ import { AppService } from './app.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  search = ''
+
   appService = inject(AppService);
 
   ngOnInit(): void {
