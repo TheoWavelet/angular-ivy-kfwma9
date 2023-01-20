@@ -6,15 +6,6 @@ import { AppService } from './app.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   search = ''
-
-  appService = inject(AppService);
-
-  ngOnInit(): void {
-    this.appService.getGridData().subscribe({
-      next: (data) => console.log(data),
-      error: (error) => console.log('error', error.message),
-    });
-  }
 }

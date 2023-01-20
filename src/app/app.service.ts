@@ -1,18 +1,19 @@
 import { Injectable } from '@angular/core';
 import { Observable, of, throwError } from 'rxjs';
 
-@Injectable({ providedIn: 'root' })
-// @Injectable()
+@Injectable()
 export class AppService {
   public getGridData(): Observable<any[]> {
     return of(data);
   }
 }
+
 export type DataModel = {
   id: number;
   name: string;
   status: 'ACTIVE' | 'DISABLED';
 };
+
 const data: DataModel[] = [
   {
     id: 1057,
@@ -40,3 +41,8 @@ const data: DataModel[] = [
     status: 'DISABLED',
   },
 ];
+const statusTranslations = {
+  ACTIVE: 'აქტიური',
+  DISABLED: 'გაუქმებული',
+};
+
